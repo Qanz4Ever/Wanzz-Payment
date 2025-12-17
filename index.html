@@ -1,0 +1,183 @@
+<!-- File Created By Mfsavana -->
+<!-- Don't Steal Anything -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanzz Store Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="splash">
+    <div class="splash-content">
+      <h1>Selamat Datang</h1>
+      <p>Wanzz Store Payment</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <div id="stars"></div>
+
+  <h1>Wanzz Store Payment</h1>
+
+  <div class="container">
+
+    <div class="profile-wrapper">
+      <img src="./image/profile.jpg" alt="Profile" class="profile-img">
+    </div>
+
+    <div class="section-divider"><span>Payment</span></div>
+
+    <div class="glow-box" onclick="openPopup('popupQris')">Payment QRIS</div>
+    <div class="glow-box" onclick="openPopup('popupDana')">Payment Dana</div>
+    <div class="glow-box" onclick="openPopup('popupGopay')">Payment Gopay</div>
+
+    <div class="section-divider"><span>Marketplace</span></div>
+
+    <div class="glow-box" onclick="openPopup('popupPanel')">
+      Panel Pterodactyl<br>Rp 5.000 - Rp 13.000
+    </div>
+  </div>
+  
+  <div class="popup" id="popupQris">
+    <div class="popup-content modern-popup">
+      <h2 class="popup-title">Qris Payment</h2>
+      <img class="qris-img" src="./image/qris.png" alt="QRIS">
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="closePopup('popupQris')">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popupDana">
+    <div class="popup-content modern-popup">
+      <h2 class="popup-title">Dana Payment</h2>
+
+      <div class="payment-info">
+        <span>Nomor</span>
+        <strong>081460365472</strong>
+        <span>Atas Nama</span>
+        <strong>Wanzz Store</strong>
+      </div>
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="copyText('081460365472')">Copy Nomor</button>
+        <button class="btn-ghost" onclick="closePopup('popupDana')">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popupGopay">
+    <div class="popup-content modern-popup">
+      <h2 class="popup-title">Gopay Payment</h2>
+
+      <div class="payment-info">
+        <span>Nomor</span>
+        <strong>081460365472</strong>
+        <span>Atas Nama</span>
+        <strong>Wanzz Store</strong>
+      </div>
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="copyText('081460365472')">Copy Nomor</button>
+        <button class="btn-ghost" onclick="closePopup('popupGopay')">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popupPanel">
+    <div class="popup-content modern-popup">
+
+      <h2 class="popup-title">Panel Pterodactyl</h2>
+
+      <div class="panel-table">
+
+        <div class="panel-row head">
+          <span>Harga</span>
+          <span>CPU</span>
+          <span>RAM & Disk</span>
+          <span>Aksi</span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 5.000</span>
+          <span>330%</span>
+          <span>5 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('5 GB','Rp 5.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 6.000</span>
+          <span>450%</span>
+          <span>6 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('6 GB','Rp 6.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 7.000</span>
+          <span>500%</span>
+          <span>7 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('7 GB','Rp 7.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 8.000</span>
+          <span>550%</span>
+          <span>8 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('8 GB','Rp 8.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 9.000</span>
+          <span>600%</span>
+          <span>9 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('9 GB','Rp 9.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 10.000</span>
+          <span>650%</span>
+          <span>10 GB</span>
+          <span class="panel-action">
+            <button class="btn-order" onclick="orderPanel('10 GB','Rp 10.000')">Order</button>
+          </span>
+        </div>
+
+        <div class="panel-row highlight">
+          <span>Rp 13.000</span>
+          <span>Unlimited</span>
+          <span>Unlimited</span>
+          <span class="panel-action">
+            <button class="btn-order premium" onclick="orderPanel('Unlimited','Rp 13.000')">Order</button>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="closePopup('popupPanel')">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">© Created By Mfsavana</div>
+  <script src="script.js"></script>
+</body>
+</html>
