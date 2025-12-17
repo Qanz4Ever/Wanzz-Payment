@@ -50,6 +50,6 @@ function copyText(text) {
 
 function orderPanel(panel, harga) {
   const text = `Halo Wanz, saya ingin membeli panel ${panel} dengan harga ${harga}`;
-  const url = `https://wa.me/081460365472?text=${encodeURIComponent(text)}`;
+  const url = `https://wa.me/6281460365472?text=${encodeURIComponent(text)}`;
   window.open(url, "_blank");
 }
