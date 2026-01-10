@@ -28,7 +28,7 @@
   <div class="container">
 
     <div class="profile-wrapper">
-      <img src="https://raw.githubusercontent.com/Qanz4Ever/Wanzz-Payment/refs/heads/main/image/profile.jpg" alt="Profile" class="profile-img">
+      <img src="" alt="Profile" class="profile-img">
     </div>
 
     <div class="section-divider"><span>Payment</span></div>
@@ -42,13 +42,20 @@
     <div class="glow-box" onclick="openPopup('popupPanel')">
       Panel Pterodactyl<br>Rp 5.000 - Rp 13.000
     </div>
+
+    <div class="glow-box" onclick="openPopup('popupVPS')">
+      VPS DigitalOcean<br>Rp 8.000 - Rp 10.000
+    </div>
+
+    <div class="glow-box" onclick="openPopup('popupMembership')">
+      Membership Panel<br>Rp 5.000 - Rp 30.000
+    </div>
   </div>
   
   <div class="popup" id="popupQris">
     <div class="popup-content modern-popup">
       <h2 class="popup-title">Qris Payment</h2>
       <img class="qris-img" src="https://raw.githubusercontent.com/Qanz4Ever/Wanzz-Payment/refs/heads/main/image/qris.png" alt="QRIS">
-
       <div class="popup-actions">
         <button class="btn-ghost" onclick="closePopup('popupQris')">Tutup</button>
       </div>
@@ -58,14 +65,12 @@
   <div class="popup" id="popupDana">
     <div class="popup-content modern-popup">
       <h2 class="popup-title">Dana Payment</h2>
-
       <div class="payment-info">
         <span>Nomor</span>
         <strong>081460365472</strong>
         <span>Atas Nama</span>
         <strong>Wanzz Store</strong>
       </div>
-
       <div class="popup-actions">
         <button class="btn-ghost" onclick="copyText('081460365472')">Copy Nomor</button>
         <button class="btn-ghost" onclick="closePopup('popupDana')">Tutup</button>
@@ -76,14 +81,12 @@
   <div class="popup" id="popupGopay">
     <div class="popup-content modern-popup">
       <h2 class="popup-title">Gopay Payment</h2>
-
       <div class="payment-info">
         <span>Nomor</span>
         <strong>081460365472</strong>
         <span>Atas Nama</span>
         <strong>Wanzz Store</strong>
       </div>
-
       <div class="popup-actions">
         <button class="btn-ghost" onclick="copyText('081460365472')">Copy Nomor</button>
         <button class="btn-ghost" onclick="closePopup('popupGopay')">Tutup</button>
@@ -109,63 +112,49 @@
           <span>Rp 5.000</span>
           <span>330%</span>
           <span>5 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('5 GB','Rp 5.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order" onclick="orderPanel('5 GB','Rp 5.000')">Order</button></span>
         </div>
 
         <div class="panel-row">
           <span>Rp 6.000</span>
           <span>450%</span>
           <span>6 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('6 GB','Rp 6.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order" onclick="orderPanel('6 GB','Rp 6.000')">Order</button></span>
         </div>
 
         <div class="panel-row">
           <span>Rp 7.000</span>
           <span>500%</span>
           <span>7 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('7 GB','Rp 7.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order" onclick="orderPanel('7 GB','Rp 7.000')">Order</button></span>
         </div>
 
         <div class="panel-row">
           <span>Rp 8.000</span>
           <span>550%</span>
           <span>8 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('8 GB','Rp 8.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order" onclick="orderPanel('8 GB','Rp 8.000')">Order</button></span>
         </div>
 
         <div class="panel-row">
           <span>Rp 9.000</span>
           <span>600%</span>
           <span>9 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('9 GB','Rp 9.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order" onclick="orderPanel('9 GB','Rp 9.000')">Order</button></span>
         </div>
 
         <div class="panel-row">
           <span>Rp 10.000</span>
           <span>650%</span>
           <span>10 GB</span>
-          <span class="panel-action">
-            <button class="btn-order" onclick="orderPanel('10 GB','Rp 10.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order recommend" onclick="orderPanel('10 GB','Rp 10.000')">Order</button></span>
         </div>
 
         <div class="panel-row highlight">
           <span>Rp 13.000</span>
           <span>Unlimited</span>
           <span>Unlimited</span>
-          <span class="panel-action">
-            <button class="btn-order premium" onclick="orderPanel('Unlimited','Rp 13.000')">Order</button>
-          </span>
+          <span class="panel-action"><button class="btn-order premium" onclick="orderPanel('Unlimited','Rp 13.000')">Order</button></span>
         </div>
 
       </div>
@@ -173,7 +162,96 @@
       <div class="popup-actions">
         <button class="btn-ghost" onclick="closePopup('popupPanel')">Tutup</button>
       </div>
+    </div>
+  </div>
 
+  <div class="popup" id="popupVPS">
+    <div class="popup-content modern-popup">
+      <h2 class="popup-title">VPS DigitalOcean</h2>
+      <div class="panel-table">
+
+        <div class="panel-row head">
+          <span>Harga</span>
+          <span>Core</span>
+          <span>RAM</span>
+          <span>Aksi</span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 8.000</span>
+          <span>4</span>
+          <span>16 GB</span>
+          <span class="panel-action"><button class="btn-order recommend" onclick="orderVPS('Ram 16 Core 4','Rp 8.000')">Order</button></span>
+        </div>
+
+        <div class="panel-row highlight">
+          <span>Rp 10.000</span>
+          <span>8</span>
+          <span>16 GB</span>
+          <span class="panel-action"><button class="btn-order premium" onclick="orderVPS('Ram 16 Core 8','Rp 10.000')">Order</button></span>
+        </div>
+
+      </div>
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="closePopup('popupVPS')">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popupMembership">
+    <div class="popup-content modern-popup">
+      <h2 class="popup-title">Membership Panel</h2>
+
+      <div class="panel-table">
+
+        <div class="panel-row head">
+          <span>Harga</span>
+          <span>Tipe</span>
+          <span></span>
+          <span>Aksi</span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 5.000</span>
+          <span>Reseller</span>
+          <span></span>
+          <span class="panel-action"><button class="btn-order" onclick="orderMember('Reseller','Rp 5.000')">Order</button></span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 10.000</span>
+          <span>Admin</span>
+          <span></span>
+          <span class="panel-action"><button class="btn-order" onclick="orderMember('Admin','Rp 10.000')">Order</button></span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 17.000</span>
+          <span>Partner</span>
+          <span></span>
+          <span class="panel-action"><button class="btn-order" onclick="orderMember('Partner','Rp 17.000')">Order</button></span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 25.000</span>
+          <span>Owner</span>
+          <span></span>
+          <span class="panel-action"><button class="btn-order premium" onclick="orderMember('Owner','Rp 25.000')">Order</button></span>
+        </div>
+
+        <div class="panel-row">
+          <span>Rp 30.000</span>
+          <span>Tangan Kanan</span>
+          <span></span>
+          <span class="panel-action"><button class="btn-order recommend" onclick="orderMember('Tangan Kanan','Rp 30.000')">Order</button></span>
+        </div>
+
+      </div>
+
+      <div class="popup-actions">
+        <button class="btn-ghost" onclick="closePopup('popupMembership')">Tutup</button>
+      </div>
     </div>
   </div>
 
